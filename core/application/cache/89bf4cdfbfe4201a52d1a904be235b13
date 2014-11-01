@@ -1,0 +1,355 @@
+1370513213TS---><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="google-site-verification" content="">
+<meta name="keywords" content="php,css">
+<meta name="description" content="چطوری تو">
+<script src="http://localhost/amlak/assets/admin/js/jquery-1.8.2.js" language="javascript" > </script>
+
+<link  href="http://localhost/amlak/assets/site/style/style.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="http://localhost/amlak/assets/site/style/amlakrooz.css"/>
+<link rel="stylesheet" type="text/css" href="http://localhost/amlak/assets/site/style/amlakrooz1.css"/>
+
+<title>نوشته های یک مبتدی</title>
+<!---->
+</head>
+
+<body>
+<div class="master_top">
+
+<div class="menutopbox">
+<ul class="menutop">
+<li class="li1"><a href="http://localhost/amlak/index">صفحه اصلی</a></li>
+<li class="li2"><a>فهرست املاک</a>
+<ul class="mn" style="z-index:999999;">
+	        <li><a href="http://localhost/amlak/homes/1">آپارتمان</a></li>
+            <li><a href="http://localhost/amlak/homes/2">ویلا</a></li>
+            <li><a href="http://localhost/amlak/homes/3">گاو داری</a></li>
+    </ul>
+
+</li>
+<li class="li3"><a href="http://localhost/amlak/register_home">سپردن ملک</a></li>
+<li class="li4"><a href="http://localhost/amlak/dht">درخواست ملک</a></li>
+<li class="li5"><a href="http://localhost/amlak/adver">سفارش تبلیغات</a></li>
+<li class="li6"><a href="#">نقشه</a></li>
+<li class="li7"><a href="http://localhost/amlak/contactus">درباره ما</a></li>
+</ul><!--menutop-->
+</div><!--menutopbox-->
+
+<a href="http://localhost/amlak/index"><div class="logobox"></div></a><!--logobox-->
+
+<div class="loginbox">
+
+	<a href="http://localhost/amlak/user_login">ورود</a>    <span>/</span>
+    <a href="http://localhost/amlak/user_register">عضویت</a>
+		
+
+</div><!--login box-->
+
+<div style="position:absolute ; left:0px ;top:5px; height:60px; width:468px">
+</div>
+<div style="position:absolute ; left:0px ;top:75px; height:10px; width:200px;">
+	<strong>پنجشنبه ۱۶ خرداد ۱۳۹۲</strong>
+</div>
+</div><!--master_top-->
+<div class="mastermain">
+
+<div class="searchbox">
+<div class="circle_lt"></div>        
+<div class="circle_rb"></div>  
+<div class="circle_rt"></div>
+
+<ul class='tabs'>
+   <!-- <li class="active 1"><a href='#tab1'></a>
+    <div class="1"></div>
+    </li>-->
+    <li class="active 1"><a href='#'>خرید ملک</a>
+   <div class="sbox_arrow"></div>
+    </li>
+    <li class="active 2"><a href='#'>رهن و اجاره ملک</a>
+   <div class=""></div>
+    </li>
+  </ul>
+  <script>
+	  $(document).ready(function(e) {
+		
+		
+		$('#search').click(function(){
+			var ostan = $('#tests').val();
+			
+			if(ostan == 0){ alert('استان را انتخاب کنید'); exit()}
+			
+			var categories = $('#categories').val();
+			if(categories == 0){ alert('شهرستان را انتخاب کنید'); exit()}
+			
+			var contents = $('#contents').val();
+			if(contents == 0){ alert('منطقه را انتخاب کنید'); exit()}	
+			
+			var noeMelk = $('#noeMelk').val();
+			if(noeMelk == 0){ alert('نوع ملک را مشخص کنید'); exit()}
+			
+			if(ostan !=0 & categories !=0 & contents !=0 & noeMelk !=0){
+			
+				$('#kharid').submit();
+				
+			}
+			})
+			
+			$('#search1').click(function(){
+			var ostan = $('#tests').val();
+			
+			if(ostan == 0){ alert('استان را انتخاب کنید'); exit()}
+			
+			var categories = $('#categories').val();
+			if(categories == 0){ alert('شهرستان را انتخاب کنید'); exit()}
+			
+			var contents = $('#contents').val();
+			if(contents == 0){ alert('منطقه را انتخاب کنید'); exit()}	
+			
+			var noeMelk = $('#noeMelk').val();
+			if(noeMelk == 0){ alert('نوع ملک را مشخص کنید'); exit()}
+			
+			if(ostan !=0 & categories !=0 & contents !=0 & noeMelk !=0){
+			
+				$('#kharid').submit();
+				
+			}
+			})
+			
+
+	});
+
+  </script>
+  <div class="mohtava" id="tab2">
+  <br />
+  <form action="http://localhost/amlak/search" id="kharid" method="post" accept-charset="utf-8"><div style="display:none">
+<input type="hidden" name="amlak" value="7e314870230418d9d4ab56baa9cacfb0" />
+</div>  <input type="hidden" name="status" value="" id="status" />
+    <select id="tests" name="ostan" class="selectbox">
+		<option value="0">استان</option>
+				<option value="1"> اردبیل </option>
+				<option value="5"> تهران </option>
+				<option value="6"> گیلان </option>
+			</select>
+    
+    
+	<select id="categories" name="category" class="selectbox">
+		<option value="0">شهرستان</option>
+	</select>
+    
+	<select id="contents" name="content" class="selectbox">
+		<option value="0">منطقه</option>
+	</select>
+    
+    <br /><br />
+    
+      <select class="selectbox" id="noeMelk" name="noeMelk">
+     <option value="0" selected="selected">نوع ملک</option>
+                 <option value="1"> آپارتمان </option>
+                 <option value="2"> ویلا </option>
+                 <option value="3"> گاو داری </option>
+            </select>
+    
+     <select class="selectbox" name="metraj">
+        <option value="">متراژ</option>
+        <option value="">همه موارد</option>
+        <option value="100">تا 100 متر</option>
+        <option value="150">100 تا 150 متر</option>
+        <option value="200">150 تا 200 متر</option>
+        <option value="250">200 تا 250 متر</option>
+        <option value="251">250 متر به بالا</option>
+     </select>
+     
+     <br /><br /><br />
+     
+  <input class="inputbox" onkeyup="format(this)" name="money_min"  placeholder="قیمت کل حداقل (تومان)">
+  
+  <input class="inputbox" onkeyup="format(this)" name="money_max"  placeholder="قیمت کل حداکثر (تومان)">
+ <div class="btn_col">
+ <img  id='search'  src="http://localhost/amlak/assets/site/img/srch_btn3.png" name="btn1" class="btnactive" alt="جستجوی خرید ملک"  />
+ <img id='search1' src="http://localhost/amlak/assets/site/img/srch_btn3.png" name="btn2" class="btndeactive" alt="جستجوی رهن اجاره"  />
+ </div>
+  </div> <!--bax mohtava-->
+  
+ 
+</form></div> <!--search box-->
+
+
+<!--shoroe tabligate bozorgh-->
+<div id="page">
+
+<div class="circle_rt"> </div>
+<div class="circle_lb"> </div>
+
+  
+   <div id="wrapper">
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+               <a href="http://localhost/amlak/details/27">
+				<img src="http://localhost/amlak/images/home/red_1970_dodge_charger_r_t_by_americanmuscle-d64oa1b1.jpg" data-thumb="http://localhost/amlak/images/home/red_1970_dodge_charger_r_t_by_americanmuscle-d64oa1b1.jpg" alt="رشت"
+				
+				title="<strong>فروش - گاو داری- آدرس : رشت</strong>" /></a><a href="http://localhost/amlak/details/22">
+				<img src="http://localhost/amlak/images/home/striped_bottom__by_junee28-d64oso4.jpg" data-thumb="http://localhost/amlak/images/home/striped_bottom__by_junee28-d64oso4.jpg" alt="ardabil"
+				
+				title="<strong>رهن - آپارتمان- آدرس : ardabil</strong>" /></a>            </div>
+        </div>
+   </div>
+			
+     
+       
+      
+  
+   
+</div><!--page box (tablighe bozorgh)-->
+        
+<!--<div class="banertwo"></div> banertwo-->   
+<div class="box_body">
+<div class="up next_02">&nbsp;</div>
+<div class="down previous_02">&nbsp;</div>
+
+
+
+<div class="content anyClass_02">
+<ul>
+<!--شروع اولین تبلیغ-->
+	<li><div class="bcontent proj"><div class="bcontent_body"><div class="text"><a href="http://localhost/amlak/details/26"><img src="http://localhost/amlak/images/home/women_irina_shayk_desktop_1600x1200_hd-wallpaper-1111672.jpg"  /></a><div class="website"><a href="http://localhost/amlak/details/26">فروش - آپارتمان</a><br><br>اردبیل کارشناسان</div></div></div><div class="bcontent_bottom"></div></div></li><li><div class="bcontent proj"><div class="bcontent_body"><div class="text"><a href="http://localhost/amlak/details/24"><img src="http://localhost/amlak/images/home/red_1970_dodge_charger_r_t_by_americanmuscle-d64oa1b.jpg"  /></a><div class="website"><a href="http://localhost/amlak/details/24">رهن - ویلا</a><br><br>اردبیل کارشناسان</div></div></div><div class="bcontent_bottom"></div></div></li><li><div class="bcontent proj"><div class="bcontent_body"><div class="text"><a href="http://localhost/amlak/details/25"><img src="http://localhost/amlak/images/home/colza_field_by_norbertkocsis-d64paqd.jpg"  /></a><div class="website"><a href="http://localhost/amlak/details/25">فروش - ویلا</a><br><br>رشت</div></div></div><div class="bcontent_bottom"></div></div></li>    
+<!--پایان اولین تبلیغ-->
+</ul>
+</div>
+
+</div>  <!--box body (tablighe keshoi)-->      
+
+<div class="akharinha">
+<div class="yellow_box_title">جدیدترین املاک فروش یا اجاره </div> 
+
+
+<div class="tab-content">
+
+<div  class="new_app_col_right">
+    
+    
+            <div  class="new_app_title">  ملک برای فروش</div>
+        
+				<div class="new_app_item"> <a href="http://localhost/amlak/details/23">اردبیل , سرعین , منطقه1 , 
+		ویلا</a></div>        
+</div><!--new_app_col_right-->
+
+<div  class="new_app_col_left">
+    
+            <div  class="new_app_title">  ملک برای رهن و اجاره </div>
+            <div class="new_app_item"> <a href="http://localhost/amlak/details/22">اردبیل , سرعین , منطقه1 , 
+		آپارتمان</a></div>        	
+			
+        
+</div><!--new_app_col_left-->
+
+
+<div class="new_app_footer" >
+<div style="color:#000; margin-right:180px;float:right"><a href="http://localhost/amlak/list/1">سایر موارد</a></div>
+<div style="color:#000; margin-left:18px; float:left"><a href="http://localhost/amlak/list/2">سایر موارد</a></div>
+</div>
+ 
+                   
+                </div><!--tab-content-->
+                
+<div class="yellow_box_title">جدیدترین تقاضاهای خرید یا اجاره </div>
+<div class="tab-content">
+
+<div  class="new_app_col_right">
+    
+    
+            <div  class="new_app_title">  ملک برای خرید</div>
+        	<div class="new_app_item"> <a href="detail/2">تهران , کرج , ونک , ویلا</a></div>            
+
+        
+</div><!--new_app_col_right-->
+
+<div  class="new_app_col_left">
+    
+            <div  class="new_app_title">  ملک برای رهن و اجاره </div>
+            
+			        
+</div><!--new_app_col_left-->
+
+
+<div class="new_app_footer">
+<div style="color:#000; margin-right:180px;float:right"><a href="http://localhost/amlak/list/3">سایر موارد</a></div>
+<div style="color:#000; margin-left:18px; float:left"><a href="http://localhost/amlak/list/4">سایر موارد</a></div>
+</div>
+ 
+                   
+                </div>
+
+</div><!--box akharin ha-->
+
+</div><!--mastermain-->
+
+
+<link  href="http://localhost/amlak/assets/site/style/absolution.css" type="text/css" rel="stylesheet"/>
+<script src="http://localhost/amlak/assets/site/js/jquery-1.6.21.min.js" language="javascript" > </script>
+<script src="http://localhost/amlak/assets/admin/js/jquery-ui-1.9.0.custom.js" language="javascript"></script>
+<script type="text/javascript" src="http://localhost/amlak/assets/site/js/amlakrooz.js"></script>
+<script type="text/javascript" src="http://localhost/amlak/assets/site/js/light.js"></script>
+<script type="text/javascript" src="http://localhost/amlak/assets/site/js/easing.js"></script>
+<script type="text/javascript" src="http://localhost/amlak/assets/site/js/jcarousellite_1.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://localhost/amlak/assets/site/js/02.js"></script>
+<script type="text/javascript" src="http://localhost/amlak/assets/site/js/jquery.autoPopulateBox.js"></script>
+<script language="javascript"  src="http://localhost/amlak/assets/site/js/price.js" ></script>
+
+<script src="http://localhost/amlak/assets/site/js/jquery.ui.datepicker-cc.all.min.js"></script>
+<script>
+	jQuery(function($) {
+		$('#tests').autoPopulateBox({
+			emptyLabel: '(انتخاب)',
+			url: 'http://localhost/amlak/site/json',
+			allSeparator: '/',
+			change: 'category',
+			
+			category: {
+				target: '#categories',
+				change: 'content'
+			},
+			content: {
+				target: '#contents'
+			}
+		});
+	});
+
+</script>
+<div class="footer">
+<div class="circle_lb"> </div>
+<div class="circle_rb"></div>
+    <div class="footerbox">
+    
+    <ul id="footermenu">
+        <li><a href="http://localhost/amlak/site">صفحه اصلی</a></li> 
+        <li><a href="http://localhost/amlak/site/contactus">درباره ما</a></li>      
+        <li><a href="http://localhost/amlak/register_home">سپردن ملک</a></li>
+        <li><a href="http://localhost/amlak/dht">درخواست ملک</a></li>        
+        <li><a href="">نقشه </a></li>
+        <li><a href="http://localhost/amlak/adver">سفارش تبلیغات</a></li>
+       
+
+    </ul>
+    
+    </div><!--footerbox-->
+
+</div><!--footer-->
+
+<div class="footer_details">
+
+<div class="copyright_colright">
+                <div style="color:red">
+                    سایت املاک روز هیچگونه مسئولیتی در مورد درستی یا نادرستی اطلاعات
+                    املاک ثبت شده ندارد.
+                    <br>
+                </div>
+                &copy;1392 کلیه حقوق برای وب سایت املاک روز محفوظ است.
+            </div>
+
+</div><!--footer_details-->
+
+
+</body>
+</html>

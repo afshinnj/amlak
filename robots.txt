@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /core/
+Disallow: /images/
+Disallow: /captcha/
+Disallow: /db-backup/
+Sitemap: /sitemapsIndex.xml

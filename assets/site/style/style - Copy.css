@@ -1,0 +1,217 @@
+body{background:url(../img/back.png) repeat-x top;padding:0;margin:0;font-family:Tahoma,Geneva,sans-serif;font-size:9pt;
+color:#333;direction:rtl;background-color:#E9E4EE}
+div.master_top{width:955px;margin:0 auto;position:relative ;height:143px; top:2px }
+
+div.menutopbox{width:700px;height:60px; position:relative ; top:98px }
+ul.menutop {list-style-type: none;padding:0;margin:0;}
+ul.menutop li {float: right;position: relative;width:93px;margin-left:0px;}
+ul.menutop li a {text-align: center;display:block;text-decoration:none;background-color:#775292;color:#FFFFFF;padding-top:15px}
+ul.menutop li.li1 a{background-color: #6d468a ;height:30px}
+ul.menutop li.li2 a{background-color:#775292 ;height:30px}
+ul.menutop li.li3 a{background-color: #805e99 ;height:30px}
+ul.menutop li.li4 a{background-color: #8969a0;height:30px}
+ul.menutop li.li5 a{background-color:#9274a7;height:30px}
+ul.menutop li.li6 a{background-color:#9b80af ;height:30px}
+ul.menutop li.li7 a{background-color: #a48cb6;height:30px}
+ul.menutop li:hover{background-color:#12aeef; color:#000000;}
+ul.menutop li a:hover,ul.menutop li:hover a{background-color:#F3EDF4; color:#000000;}
+ul.menutop li ul {list-style-type: none;display: none}
+ul.menutop li:hover ul {display: block;}
+ul.mn li {background-color:#333399;width:140px;right:-40px;}
+ul.mn li a {display:block;background:#12aeef;color:#ffffff;text-align:right;padding-right:15px;
+padding-top:10px;border-bottom: 1px solid #f2f2f2;border-right: none;position:relative;z-index:999999; font-size:9pt}
+ul.mn li a:hover{background:#00CCFF;color:#000000;font-size:9pt}
+
+
+div.label_new{width:30px;height:32px;position:absolute;top:-25px;right:190px;z-index:1000}
+
+
+div.logobox{background-image:url(../img/logo.png); position:absolute;right:0px; top:10px;width:142px;height:80px}
+div.loginbox{background-color:#b9a8c6;position:absolute; bottom:0px; left:0px; padding:10px 25px 0 0;  width:280px;height:35px}
+div.loginbox a{color:#49176d ; text-align:center; text-decoration:none;font-size:12pt ; }
+div.loginbox span{#49176d}
+div.mastermain{width:955px;margin:0 auto;position:relative;height:auto; top:10px;}
+div.footer{width:950px;position:relative; height:50px; background-color:#006FC1 ;top:520px;margin:0 auto}
+div.footerbox {  margin: 0 auto; width: 500px;}
+ul#footermenu { clear: both; height: 20px;list-style: none outside none; margin: 3px 0 7px; padding: 15px 0;width: 700px;}
+ul#footermenu li { background: url("../img/footer-divider.gif") no-repeat scroll left center transparent;
+    float: right; padding-left: 9px; padding-right: 9px;}
+ul#footermenu li a{color:#FFF ;text-decoration:none; }	
+div.footer_details{width:955px;margin:0 auto;position:relative; height:100px;top:520px; text-align:center; line-height:30px;}
+
+                                    /*--------------------shoroe tabe search--------------------------*/
+									
+div.searchbox {  background-color: #006FC1; height: 238px;padding:0px 25px 0px 0;position:relative;width:510px;right:3px; top:5px}
+
+ul.tabs {float:right;text-align:right ;direction:rtl; position: absolute;right:0px;top:5px;}
+
+ul.tabs li {list-style:none;display:inline}
+
+ul.tabs li,
+ul.tabs li.active
+ {float: right;margin: 0 0 0 10px;padding: 0 5px 0 0;position: relative;z-index: 10;}
+
+ul.tabs li a,
+ul.tabs li.active a
+{color: #FFFFFF;display: block;font-size: 17px;height: 35px;padding: 4px 5px 0 10px;text-align: center;text-decoration: none;}
+ 
+ul.tabs li.active,ul.tabs li.active a {background-image: url("../img/menu_bg.png"); background-repeat: no-repeat;}
+
+ul.tabs li.active {background-position: right -93px; text-align: center;}
+
+ul.tabs li.active a { background-position: left -93px;}
+
+ul.tabs li a:hover { color: #FEDC6B !important;}
+
+ul.tabs li.active a:hover {color: #FFFFFF !important;}
+
+ul.tabs li.active .sbox_arrow { background: url("../img/sbox_tab_arrow.png") no-repeat scroll right center transparent;
+ height: 8px;margin: -1px auto 0;width: 25px;}
+
+
+
+
+div.circle_lt {background-position: 0 -40px;left: -2px;top: -2px;}
+div.circle_rb {background-position: -20px -60px;right: -2px;bottom: -2px;}
+div.circle_lb {background-position: left bottom;bottom: -2px; left: -2px;}
+div.circle_rt {background-position: right top;right: -2px;top: -2px;}
+
+div.circle_lb, div.circle_rt, div.circle_lt, div.circle_rb {background-image: url("../img/circle.png");background-repeat: no-repeat;height: 20px;position: absolute;width: 20px; z-index: 900;
+}
+
+div.mohtava{width:445px; height:175px; background-color:#006FC1 ; right:25px ;position:absolute; top:10px; text-align:right;padding-top:50px;}
+
+.selectbox {display: block;float: right;height: 30px;width: 147px; border: 1px solid #03538D;
+    border-radius: 5px 5px 5px 5px;font-family: Tahoma; font-size: 8pt; padding: 5px;}
+	
+.inputbox{height: 20px;text-align: center;width: 135px; border: 1px solid #03538D;
+border-radius: 5px 5px 5px 5px;font-family: Tahoma; font-size: 8pt; padding: 5px;}
+
+div.btn_col{bottom: 10px;left:0px;  text-align: left; width: 120px;position:absolute}
+input[name='btn1']{bottom: 10px;left:0px;  text-align: left; width: 120px;position:absolute}
+input[name='btn2']{bottom: 10px;left:0px;  text-align: left; width: 120px;position:absolute}
+input.btnactive{display:block}
+input.btndeactive{display:none}
+
+                               /*--------------------shoroe tablige slide bozorgh--------------------------*/
+#page {height: 240px;width: 400px;position:absolute;left:0px; top:5px;}
+			
+                                     /*--------------------shoroe tablige baner2--------------------------*/
+div.banertwo{position:absolute; top:255px; left:0px; background-image:url(../img/agancy.png); width:400px; height:98px; }
+
+
+                                     /*--------------------shoroe tablige keshoi--------------------------*/
+div.box_body{position:absolute; top:274px; left:0px;  width:400px; height:467px;border: 1px solid #D6D8E2;background-color:#FFF}
+
+div.up{height:10px;width:49px;float:right;background:url(../img/tablighe_keshoi/up.png) no-repeat center;
+cursor:pointer;position:absolute;top:-12px; right:165px;}
+
+div.down{height:10px;width:49px;float:right;background:url(../img/tablighe_keshoi/down.png) no-repeat;
+cursor:pointer;position:absolute;top:1px;right:165px;}
+
+.content {width:380px !important;margin:20px 0 5px 0;float:right}
+
+.bcontent {float: right; margin: 15px 20px 0 0; position: relative;width: 380px;}
+
+.bcontent_body {width:380px;float:right;}
+
+.bcontent_body .text {width:300px;height:110px float:right;margin:8px 10px 3px 0;text-align:justify;color:#545454;line-height:17px; font-size:10pt}
+.bcontent_body .text a{text-decoration:none }
+.bcontent_body .text img {float:right;border:3px solid #e3e3e3;text-align:center; width:150px; height:100px}
+
+div.website {height:auto;width:200px; -moz-border-radius:3px;-webkit-border-radius:3px;
+text-align:center;padding:5px;position:absolute; right:120px; top:10px}
+
+
+.bcontent_bottom { border-bottom: 2px solid #CCCCCC;float: right;height: 10px;width: 380px;} 
+
+
+
+/*---------------------------------------shoroe akharinha----------------------------------------------*/
+div.akharinha{position:absolute; width:535px; height:200px;  right:3px; top:240px;}
+
+div.yellow_box_title{font-size: 14px;height: 27px; padding: 1px 10px 0 0;background-position: right -86px;
+    border: 1px solid #DFB902;color: #9F4509; background-image: url("../img/titles_bg.png");
+    background-repeat: repeat;font-weight: bold;margin-top:15px;
+	line-height:25px;}
+	
+div.tab-content{border-color:#CCC ; border-image: none;border-style: none solid solid;border-width: medium 1px 1px;
+    padding-top: 10px; clear: both; color: #FFFFFF;height:195px ;position:relative;background-color:#FFF }	
+
+div.tab-content a{color:#39F}	
+	
+div.new_app_col_right {right:5px;width: 220px;position:absolute ; border-left:#CCC thin solid ;padding-right:20px;padding-left:10px  }
+div.new_app_col_left {left:5px;width: 220px;position:absolute;padding-right:20px; padding-left:10px }
+
+div.new_app_title { color: #FF6600; float: right; font-weight: 700; padding-bottom: 10px; width: 150px;}
+div.new_app_item { border-top: 1px dotted #D6D8E2;clear: both;height: 20px; padding-bottom: 3px; padding-top: 2px;}
+div.new_app_footer{background-color:#f5f7fa ; width:533px ; height:25px ; position:absolute; bottom:0px}
+/*-----------------------------------------------shoroe my table---------------------------------------------*/
+.mytable{width: 940px;margin-top:30px}	
+
+/*-----------------------------------------------shoroe safheye register home---------------------------------------------*/
+
+.register_home{position:relative; width:955px; height:auto; top:20px ; margin:0 auto; background-color:#f4f9ff;border:thin #bbd7ff solid; z-index:0}
+.subject{ border:thin #bbd7ff solid;background-color:#f4f9ff ;padding:15px 15px }
+.bkgry{background: none repeat scroll 0 0 #D2D3CF}
+.inputbox { border: 1px solid #7B8593; color: #000000; margin-bottom: 3px; padding: 2px;}
+
+/*-----------------------------------------------shoroe safheye details home---------------------------------------------*/
+		
+.details_home{position:relative; width:940px; height:auto; top:20px ; margin:0 auto; background-color:#f4f9ff;border:thin #bbd7ff solid; z-index:0}
+.sepratorline2 { border-bottom: 1px dotted #B3C0CD; color: #3C404E;margin-left: 10px; width: 50px;}
+.sepratorlineN { border-bottom: 1px dotted #B3C0CD; color: #0054A8; font-weight: bold; width: 100px;}
+.sepratorline {border-bottom: 1px dotted #B3C0CD;color: #3C404E;margin-left: 10px;}
+.dtltext { color: #990000; font-size: 12px; padding: 12px 5px;text-align: right;}
+.dtltitle {font-family: Tahoma;font-size: 13px;font-weight: bold;white-space: nowrap;width: 50px;}
+
+.d-mtype{background: url("../img/details/mtypeicon.gif") no-repeat scroll right center transparent;
+    float: right; height: 50px;text-indent: 60px;width: 60px;}
+	
+.d-mtype {background: url("../img/details/mtypeicon.gif") no-repeat scroll right center transparent;
+    float: right; height: 50px;text-indent: 60px; width: 60px;}
+	
+.d-price {background: url("../img/details/priceicon.gif") no-repeat scroll right center transparent;
+    float: right; height: 50px; text-indent: 60px; width: 60px;}
+	
+.d-arse {background: url("../img/details/arseicon.gif") no-repeat scroll right center transparent;
+    float: right; height: 50px;text-indent: 60px;width: 60px;}
+.d-zirbana {background: url("../img/details/zirbanaicon.gif") no-repeat scroll right center transparent;
+    float: right; height: 50px;text-indent: 60px;width: 60px;}
+	
+.d-equapment { background: url("../img/details/equapmenticon.gif") no-repeat scroll right center transparent;
+    float: right;height: 50px;text-indent: 60px;width: 60px;}
+	
+.d-comment { background: url("../img/details/commenticon.gif") no-repeat scroll right center transparent;
+float: right;height: 50px;text-indent: 60px; width: 60px;}
+
+.d-mstatus {background: url("../img/details/mstatusicon.gif") no-repeat scroll right center transparent;
+    float: right; height: 50px;text-indent: 60px;width: 60px;}
+	
+.d-region {background: url("../img/details/regionicon.gif") no-repeat scroll right center transparent;
+    float: right;height: 50px;text-indent: 60px;width: 60px;}
+	
+.d-score {background: url("../img/details/scoreicon.gif") no-repeat scroll right center transparent;
+    float: right;height: 50px;text-indent: 60px; width: 60px;}
+	
+.d-sanad { background: url("../img/details/sanadicon.gif") no-repeat scroll right center transparent;
+    float: right;height: 50px;text-indent: 60px;width: 60px;}
+	
+.d-rdiv {float: right;width: 5px;}	
+
+
+/* --------- footer2 ------- */
+div.footer2{width:955px;position:relative; height:50px; background-color:#006FC1 ;top:20px;margin:0 auto}
+div.footerbox2 {  margin: 0 auto; width: 500px;}
+ul#footermenu2 { clear: both; height: 20px;list-style: none outside none; margin: 3px 0 7px; padding: 15px 0;width: 940px;}
+ul#footermenu2 li { background: url("../img/footer-divider.gif") no-repeat scroll left center transparent;
+    float: right; padding-left: 9px; padding-right: 9px;}
+ul#footermenu2 li a{color:#FFF ;text-decoration:none; }	
+div.footer_details2{width:955px;margin:0 auto;position:relative; height:100px;top:50px}
+
+
+/*---------------------------------------------------------------------------------------------*/
+
+
+#largeImage { border: 1px solid gray; padding: 4px; background-color: white;}
+

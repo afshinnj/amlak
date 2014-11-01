@@ -1,0 +1,40 @@
+div.sliderFrame{position:relative; width:400px; height:400px;  margin:0 auto}
+
+
+
+
+/*thumbnails*/
+#thumbs 
+{
+   
+   
+	height:100px;
+    color:#666;
+	position:absolute;
+	top:230px;
+    margin:auto;
+	
+	
+}
+#thumbs .thumb 
+{
+    border:1px solid #CCC;
+    background:#EEE;
+	height:auto;
+	width:auto;
+	position:relative;
+	float:right
+}
+#thumbs .thumb-on 
+{
+    background:#FFF;
+}
+
+#thumbs img{border:1px solid #DDD; cursor:pointer; width:120px; height:79px;}
+
+#thumbs .frame {float:left;padding:2px;border:1px solid #CCC;background:white;border-radius:3px;box-shadow:0 0 3px #BBB;font-size:0;line-height:0;}
+#thumbs .thumb-content {float:left;width:110px;padding-left:18px;}
+
+/* Captions in #thumbs .thumb-content */
+#thumbs .thumb-content p {font-weight:bold; color:#BF5D9B; margin:0 0 3px;padding:0;}
+#thumbs .thumb-on .thumb-content p {color:#BB0000;}
