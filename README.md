@@ -8,9 +8,10 @@ amlak
  + پایگاه داده amlak.sql را به پایگاه داده ساخته شده import میکنیم
  + و در مسیر  core/application/config فایل database.php را با ادیتور باز میکنیم 
  + مشخصات پایگاه داده را در ان وارد میکنیم 
-
-sitename/login
-
-username : afshin
-
-password : 123456
+ + 
++ sitename/login
++ 
+admin panel username and password
++
++ username : admin
++ password : 123456
