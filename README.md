@@ -11,6 +11,6 @@ amlak
  + 
  
 + sitename/login
-admin panel username and password
++ admin panel username and password
 + username : admin
 + password : 123456
