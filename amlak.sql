@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 3.4.5
+-- version 4.0.10deb1
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 24, 2013 at 08:07 AM
--- Server version: 5.5.16
--- PHP Version: 5.3.8
+-- Generation Time: Nov 06, 2014 at 05:18 PM
+-- Server version: 5.5.40-0ubuntu0.14.04.1
+-- PHP Version: 5.5.9-1ubuntu4.5
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `admin_user` (
 --
 
 INSERT INTO `admin_user` (`id`, `LoginName`, `LoginPass`, `UserEmail`, `UserAvatar`) VALUES
-(1, 'afshin', '8f83749255531d677e0d9de33d2aa487bafe4543', 'afshin.nj@gmail.com', '');
+(1, 'admin', '8f83749255531d677e0d9de33d2aa487bafe4543', 'afshin.nj@gmail.com', '');
 
 -- --------------------------------------------------------
 
@@ -77,18 +77,19 @@ CREATE TABLE IF NOT EXISTS `advertisement` (
   `save_date` varchar(50) NOT NULL,
   `active` int(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=22 ;
 
 --
 -- Dumping data for table `advertisement`
 --
 
 INSERT INTO `advertisement` (`id`, `code_melk`, `id_user`, `ads_type`, `save_date`, `active`) VALUES
-(11, '1819', 1, 2, '13920402', 1),
-(12, '1653', 1, 1, '13920402', 1),
-(13, '1781', 1, 1, '13920402', 1),
-(14, '1367', 1, 1, '13920401', 1),
-(15, '1326', 1, 2, '13920402', 1);
+(16, '3837', 3, 2, '13930915', 1),
+(17, '3891', 3, 1, '13930915', 1),
+(18, '3891', 3, 1, '13930915', 1),
+(19, '3891', 3, 1, '13930915', 1),
+(20, '3891', 3, 1, '13930915', 1),
+(21, '3512', 3, 1, '13930915', 1);
 
 -- --------------------------------------------------------
 
@@ -164,7 +165,7 @@ CREATE TABLE IF NOT EXISTS `captcha` (
 --
 
 INSERT INTO `captcha` (`time`, `captcha`) VALUES
-(1369336674, '252490');
+(1415279839, '236225');
 
 -- --------------------------------------------------------
 
@@ -182,33 +183,7 @@ CREATE TABLE IF NOT EXISTS `cartbank` (
   `Theamountpaid` varchar(50) NOT NULL,
   `save_date` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=21 ;
-
---
--- Dumping data for table `cartbank`
---
-
-INSERT INTO `cartbank` (`id`, `code_melk`, `id_user`, `TNumber`, `PayerName`, `Dateofpayment`, `Theamountpaid`, `save_date`) VALUES
-(1, '1761', 1, '125489652522', 'عشق علی', '2013/05/31', '1.000.00', 'سه شنبه ۳۱ اردیبهشت ۱۳۹۲'),
-(2, '1793', 1, '125489652522', 'عشق علی', '1392/02/31', '2,000,000', 'سه شنبه ۳۱ اردیبهشت ۱۳۹۲'),
-(3, '1908', 1, '15487777', 'عشق علی', '1392/02/31', '2.000.00', 'سه شنبه ۳۱ اردیبهشت ۱۳۹۲'),
-(4, '1870', 1, '125489652522', 'عشق علی', '1392/02/31', '1,000,000', 'سه شنبه ۳۱ اردیبهشت ۱۳۹۲'),
-(5, '1259', 1, '15487777', 'زکرایی رازی', '1392/03/27', '2.000.00', 'پنجشنبه ۲ خرداد ۱۳۹۲'),
-(6, '1761', 1, '125489652522', 'زکرایی رازی', '1392/03/31', '2.000.00', 'پنجشنبه ۲ خرداد ۱۳۹۲'),
-(7, '1761', 1, '125489652522', 'زکرایی رازی', '1392/03/31', '2.000.00', 'پنجشنبه ۲ خرداد ۱۳۹۲'),
-(8, '1761', 1, '125489652522', 'عشق علی', '1392/03/31', '2.000.00', 'پنجشنبه ۲ خرداد ۱۳۹۲'),
-(9, '1761', 1, '125489652522', 'عشق علی', '1392/03/31', '1.000.00', 'پنجشنبه ۲ خرداد ۱۳۹۲'),
-(10, '1944', 1, '125489652522', 'زکرایی رازی', '1392/03/31', '2.000.00', 'پنجشنبه ۲ خرداد ۱۳۹۲'),
-(11, '1341', 1, '15487777', 'زکرایی رازی', '1392/03/31', '2,000,000', 'پنجشنبه ۲ خرداد ۱۳۹۲'),
-(12, '1641', 1, '1365485', 'عشق علی', '1392/03/31', '1,000,000', 'پنجشنبه ۲ خرداد ۱۳۹۲'),
-(13, '1739', 1, '1', 'عشق علی', '1392/03/31', '2,000,000', 'پنجشنبه ۲ خرداد ۱۳۹۲'),
-(14, '1984', 1, '125489652522', 'زکرایی رازی', '1392/03/31', '2,000,000', 'پنجشنبه ۲ خرداد ۱۳۹۲'),
-(15, '1234', 1, '125489652522', 'عشق علی میرژا', '1392/03/31', '2,000,000', 'پنجشنبه ۲ خرداد ۱۳۹۲'),
-(16, '1819', 1, '125489652522', 'عشق علی', '1392/03/31', '2.000.00', 'پنجشنبه ۲ خرداد ۱۳۹۲'),
-(17, '1653', 1, '125489652522', 'افشین', '1392/03/31', '1,000,000', 'پنجشنبه ۲ خرداد ۱۳۹۲'),
-(18, '1781', 1, '15487777', 'زکرایی رازی', '1392/03/31', '1,000,000', 'پنجشنبه ۲ خرداد ۱۳۹۲'),
-(19, '1367', 1, '1365485', 'عشق علی میرژا', '1392/03/31', '1,000,000', 'پنجشنبه ۲ خرداد ۱۳۹۲'),
-(20, '1326', 1, '125489652522', 'عشق علی میرژا', '1392/03/31', '2.000.00', 'پنجشنبه ۲ خرداد ۱۳۹۲');
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -260,7 +235,7 @@ CREATE TABLE IF NOT EXISTS `darkhast` (
 --
 
 INSERT INTO `darkhast` (`id`, `code`, `id_user`, `id_ostan`, `id_shahrestan`, `id_mantage`, `id_noeMelk`, `sen_bana`, `tedad_khab`, `metraj`, `etbar`, `sharh_darkhast`, `save_date`, `active`) VALUES
-(2, 16695, 1, 5, 7, 10, 2, '0', '', '0', '1392/03/31', 'sdfsdfsdfsdf', 'پنجشنبه ۲ خرداد ۱۳۹۲', 1);
+(2, 16695, 1, 5, 7, 10, 2, '0', '', '0', '1392/03/31', 'sdfsdfsdfsdf', 'پنجشنبه ۲ خرداد ۱۳۹۲', 0);
 
 -- --------------------------------------------------------
 
@@ -390,19 +365,7 @@ CREATE TABLE IF NOT EXISTS `home` (
   `active` int(11) NOT NULL DEFAULT '0',
   `etbar` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=28 ;
-
---
--- Dumping data for table `home`
---
-
-INSERT INTO `home` (`id`, `id_User`, `id_ostan`, `id_shahrestan`, `id_mantage`, `address`, `noe_melk`, `mogheyat`, `masahat`, `zirbana`, `tool_bar`, `eslahi`, `t_metraj`, `tarakom`, `karbari`, `mabar`, `sanad`, `mojavez`, `nama`, `sokoonat`, `emtiyaz`, `tabagheh`, `sen_bana`, `vahedha`, `tabaghat`, `khab`, `teras`, `kafpoosh`, `telefon`, `service_ashpazkhaneh`, `service_behdashti`, `bazdid`, `tozihat`, `save_date`, `code_melk`, `active`, `etbar`) VALUES
-(22, 1, 1, 3, 4, 'ardabil', 1, 'شمالی', 0, 0, 0, 0, 0, '', 0, '', '', '', '-1', '0', 'آب,برق,گاز,تلفن', '', '', 0, '', 0, 0, '', '', '', '', 2, 'kkkkkkkkkkkkkkkk', 'پنجشنبه ۲ خرداد ۱۳۹۲', 1819, 1, '13920402'),
-(23, 1, 1, 3, 4, 'اردبیل کارشناسان', 2, 'شمالی', 0, 0, 0, 0, 0, '', 0, '', '', '', '', '0', ',,,', '', '0', 0, '', 0, 0, '', '', '', '', 0, '45454545', 'پنجشنبه ۲ خرداد ۱۳۹۲', 1359, 1, '1392/03/31'),
-(24, 1, 5, 7, 10, 'اردبیل کارشناسان', 2, 'دو نبش شمالی', 0, 0, 0, 0, 0, '', 0, '', '', '', '', 'تخلیه', 'آب,برق,,', '', '', 0, '', 0, 0, '', '', '', '', 0, '4545456', 'پنجشنبه ۲ خرداد ۱۳۹۲', 1653, 1, '13920402'),
-(25, 1, 6, 9, 13, 'رشت', 2, 'شمالی جنوبی دو کله', 0, 0, 0, 0, 0, '', 0, '', '', '', '', '0', ',,,', '', '', 0, '', 0, 0, '', '', '', '', 0, 'شماره 2222', 'پنجشنبه ۲ خرداد ۱۳۹۲', 1781, 1, '13920402'),
-(26, 1, 5, 7, 10, 'اردبیل کارشناسان', 1, 'دو نبش جنوبی', 0, 0, 0, 0, 0, '', 0, '', '', '', '', '0', 'آب,برق,گاز,تلفن', '', '', 0, '', 0, 0, '', '', '', '', 2, 'شماره 33', 'پنجشنبه ۲ خرداد ۱۳۹۲', 1367, 1, '13920402'),
-(27, 1, 6, 9, 13, 'رشت', 3, '', 0, 0, 0, 0, 0, '', 0, '', '', '', '', '0', ',,,', '', '0', 0, '', 0, 0, '', '', '', '', 44, 'یببببببببببببببببببببببببببببببببببببببببببببببببببب', 'پنجشنبه ۲ خرداد ۱۳۹۲', 1326, 1, '0');
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -415,21 +378,7 @@ CREATE TABLE IF NOT EXISTS `homeimage` (
   `id_home` int(10) unsigned NOT NULL,
   `name` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=41 ;
-
---
--- Dumping data for table `homeimage`
---
-
-INSERT INTO `homeimage` (`id`, `id_home`, `name`) VALUES
-(32, 1819, 'striped_bottom__by_junee28-d64oso4.jpg'),
-(33, 1359, 'boobs_women_bikini_desktop_1634x1200_hd-wallpaper-1111676.jpg'),
-(35, 1653, 'red_1970_dodge_charger_r_t_by_americanmuscle-d64oa1b.jpg'),
-(36, 1781, 'colza_field_by_norbertkocsis-d64paqd.jpg'),
-(37, 1367, 'women_irina_shayk_desktop_1600x1200_hd-wallpaper-1111672.jpg'),
-(38, 1326, 'red_1970_dodge_charger_r_t_by_americanmuscle-d64oa1b1.jpg'),
-(39, 1326, 'colza_field_by_norbertkocsis-d64paqd1.jpg'),
-(40, 1326, 'striped_bottom__by_junee28-d64oso41.jpg');
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -442,23 +391,19 @@ CREATE TABLE IF NOT EXISTS `home_status` (
   `code` int(11) NOT NULL,
   `status_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=51 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=56 ;
 
 --
 -- Dumping data for table `home_status`
 --
 
 INSERT INTO `home_status` (`id`, `code`, `status_id`) VALUES
-(38, 1819, 1),
-(39, 1819, 2),
 (41, 16695, 3),
-(43, 1359, 6),
-(44, 1653, 1),
-(45, 1653, 2),
-(46, 1781, 6),
-(47, 1367, 6),
-(48, 1367, 4),
-(50, 1326, 6);
+(51, 3837, 1),
+(52, 3837, 2),
+(53, 3891, 1),
+(54, 3512, 1),
+(55, 3512, 2);
 
 -- --------------------------------------------------------
 
@@ -476,19 +421,16 @@ CREATE TABLE IF NOT EXISTS `home_vam` (
   `tap` varchar(30) NOT NULL,
   `tab` varchar(30) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=35 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=38 ;
 
 --
 -- Dumping data for table `home_vam`
 --
 
 INSERT INTO `home_vam` (`id`, `code`, `max_vam`, `min_vam`, `max_price_vam`, `min_price_vam`, `tap`, `tab`) VALUES
-(26, 1819, '10', '0', '0', '', '', ''),
-(29, 1359, '0', '0', '0', '0', '0', '0'),
-(30, 1653, '', '0', '0', '', '', ''),
-(31, 1781, '', '0', '0', '', '', ''),
-(32, 1367, '', '0', '0', '', '', ''),
-(34, 1326, '0', '0', '0', '0', '0', '0');
+(35, 3837, '', '0', '0', '', '', ''),
+(36, 3891, '', '0', '0', '', '', ''),
+(37, 3512, '', '0', '0', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -579,20 +521,7 @@ CREATE TABLE IF NOT EXISTS `max_price` (
   `max_ejare` int(11) NOT NULL,
   `max_geymat` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=29 ;
-
---
--- Dumping data for table `max_price`
---
-
-INSERT INTO `max_price` (`id`, `code`, `status`, `min_rahn`, `min_ejare`, `min_geymat`, `max_rahn`, `max_ejare`, `max_geymat`) VALUES
-(22, 1819, 2, 3, 0, 0, 0, 0, 0),
-(23, 1359, 2, 0, 0, 1, 0, 0, 200),
-(24, 16695, 1, 100, 0, 0, 1, 0, 0),
-(25, 1653, 2, 1, 1, 0, 0, 0, 0),
-(26, 1781, 2, 0, 0, 11, 0, 0, 0),
-(27, 1367, 2, 0, 0, 1, 0, 0, 1),
-(28, 1326, 2, 0, 0, 1, 0, 0, 2);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -611,20 +540,7 @@ CREATE TABLE IF NOT EXISTS `min_price` (
   `max_ejare` int(11) NOT NULL,
   `max_geymat` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=29 ;
-
---
--- Dumping data for table `min_price`
---
-
-INSERT INTO `min_price` (`id`, `code`, `status`, `min_rahn`, `min_ejare`, `min_geymat`, `max_rahn`, `max_ejare`, `max_geymat`) VALUES
-(22, 1819, 2, 0, 0, 0, 0, 0, 0),
-(23, 1359, 2, 0, 0, 0, 0, 0, 0),
-(24, 16695, 1, 0, 0, 0, 0, 0, 0),
-(25, 1653, 2, 0, 0, 0, 0, 0, 0),
-(26, 1781, 2, 0, 0, 0, 0, 0, 0),
-(27, 1367, 2, 0, 0, 0, 0, 0, 0),
-(28, 1326, 2, 0, 0, 0, 0, 0, 0);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -706,9 +622,7 @@ CREATE TABLE IF NOT EXISTS `sessions` (
 --
 
 INSERT INTO `sessions` (`session_id`, `ip_address`, `user_agent`, `last_activity`, `user_data`) VALUES
-('85c02bee364b103ff7dcec9f67644518', '::1', 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:21.0) Gecko/20100101 Firefox/21.0', 1369370751, 'a:4:{s:9:"user_data";s:0:"";s:2:"id";s:1:"1";s:8:"UserName";s:17:"af69.00@gmail.com";s:17:"user_is_logged_in";i:1;}'),
-('afa56366715d9ee1ed68d2bac01d92bc', '::1', 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:21.0) Gecko/20100101 Firefox/21.0', 1369342044, 'a:3:{s:2:"id";s:1:"1";s:8:"UserName";s:17:"af69.00@gmail.com";s:17:"user_is_logged_in";i:1;}'),
-('da1ca19d822380338ee3e6c471360826', '::1', 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31', 1369342164, '');
+('f18ddc637c6b66aba99db42be2bcbd96', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36', 1415281597, 'a:6:{s:9:"user_data";s:0:"";s:2:"id";s:1:"3";s:8:"UserName";s:7:"a@a.com";s:17:"user_is_logged_in";i:1;s:4:"name";s:5:"admin";s:12:"is_logged_in";i:1;}');
 
 -- --------------------------------------------------------
 
@@ -725,15 +639,7 @@ CREATE TABLE IF NOT EXISTS `site_user` (
   `mobileTell` varchar(50) NOT NULL,
   `userAdd` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
-
---
--- Dumping data for table `site_user`
---
-
-INSERT INTO `site_user` (`id`, `userName`, `userEmail`, `userPass`, `homeTell`, `mobileTell`, `userAdd`) VALUES
-(1, 'افشین', 'af69.00@gmail.com', '8f83749255531d677e0d9de33d2aa487bafe4543', '', '09144540742', 'اردبیل کارشناسان'),
-(2, 'بیل گیتس', 'a@a.com', '8f83749255531d677e0d9de33d2aa487bafe4543', '', '09144540742', 'اردبیل کارشناسان');
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -787,7 +693,7 @@ CREATE TABLE IF NOT EXISTS `web_config` (
 --
 
 INSERT INTO `web_config` (`id`, `Web_Title`, `Admin_Email`, `Keywords`, `Description`, `WebOff`, `OffDescription`, `Days`, `month`, `Year`, `Hours`, `Minutes`, `Seconds`) VALUES
-(1, 'نوشته های یک مبتدی', 'afshin@a-vitrin.ir', 'php,css', 'چطوری تو', 1, 'در حال یروز رسانی', '', 'January', '2010', 1, 1, 1);
+(1, 'مشاوره املاک', 'afshin@a-vitrin.ir', 'php,css', 'املاک', 1, 'در حال یروز رسانی', '', 'January', '2010', 1, 1, 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
